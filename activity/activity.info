@@ -1,0 +1,12 @@
+[Activity]
+implement = gcompris
+name      = GCompris
+summary   = Wrapper for GCompris suite of educational activities for early elementary students
+description = Practice of computer skills, practice of math, simple word processor.  Modified from              TuxMath-3.1 wrapper
+license   = GPLv2
+homepage  = http://www.gcompris.org/
+category  = Education; Game
+icon      = activity-icon
+exec      = sugar-activity activity.GComprisLauncher
+activity_version = 0.31
+bundle_id = org.gcompris
