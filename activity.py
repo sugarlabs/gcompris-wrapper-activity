@@ -14,6 +14,7 @@
 # along with this program; if not, write to the Free Software
 # Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 
+import errno
 import subprocess
 
 import gi
@@ -36,8 +37,15 @@ class GComprisLauncher(Activity):
         hbox = Gtk.HBox()
         self.set_canvas(hbox)
         self.show_all()
-        options = ['gcompris', '--fullscreen']
-        proc = subprocess.Popen(options)
+        try:
+            options = ['gcompris', '--fullscreen']
+            proc = subprocess.Popen(options)
+        except OSError as e:
+            if e.errno != errno.ENOENT:
+                raise e
+            else:
+                options = ['gcompris-qt', '--fullscreen']
+                proc = subprocess.Popen(options)
 
         # Stay alive with a blank window mapped for at least 60 seconds
         # so that the shell knows that we launched
