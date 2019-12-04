@@ -6,6 +6,6 @@ license = GPLv2+
 url = http://www.gcompris.org/
 tags = Education;Game
 icon = activity-icon
-exec = sugar-activity activity.GComprisLauncher
+exec = sugar-activity3 activity.GComprisLauncher
 activity_version = 20
 bundle_id = org.gcompris
