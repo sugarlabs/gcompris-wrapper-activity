@@ -7,5 +7,5 @@ url = http://www.gcompris.org/
 tags = Education;Game
 icon = activity-icon
 exec = sugar-activity3 activity.GComprisLauncher
-activity_version = 20
+activity_version = 21
 bundle_id = org.gcompris

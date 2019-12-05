@@ -1,3 +1,8 @@
+v21 James Cameron
+
+* Port to Python 3 (Bottersnike),
+* Use gcompris-qt when gcompris not available (Ibiam Chihurumnaya),
+
 v20 James Cameron
 
 * Port to GTK+ 3,
