@@ -25,7 +25,7 @@ For example, on Ubuntu;
 sudo apt install --yes gcompris git
 git clone --depth=1 https://github.com/sugarlabs/gcompris-wrapper-activity
 rm -r ~/Activities/GCompris.activity
-mv tuxpaint-wrapper-activity ~/Activities/GCompris.activity
+mv gcompris-wrapper-activity ~/Activities/GCompris.activity
 ```
 
 How to integrate?
